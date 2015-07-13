@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38031B1C1B53DEDA0034FEC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 38031B1B1B53DEDA0034FEC0 /* .gitignore */; };
 		3824A1DD1B37E0BE00231942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DC1B37E0BE00231942 /* main.m */; };
 		3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DF1B37E0BE00231942 /* AppDelegate.m */; };
 		3824A1E31B37E0BE00231942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1E21B37E0BE00231942 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38031B1B1B53DEDA0034FEC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3824A1D71B37E0BD00231942 /* CareerCup_Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareerCup_Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3824A1DB1B37E0BE00231942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3824A1DC1B37E0BE00231942 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3824A1D91B37E0BD00231942 /* CareerCup_Questions */,
+				38031B1B1B53DEDA0034FEC0 /* .gitignore */,
 				3824A1F31B37E0BE00231942 /* CareerCup_QuestionsTests */,
 				3824A1D81B37E0BD00231942 /* Products */,
 			);
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38031B1C1B53DEDA0034FEC0 /* .gitignore in Resources */,
 				3824A1E61B37E0BE00231942 /* Main.storyboard in Resources */,
 				3824A1EB1B37E0BE00231942 /* LaunchScreen.xib in Resources */,
 				3824A1E81B37E0BE00231942 /* Images.xcassets in Resources */,
@@ -412,6 +416,7 @@
 				3824A1FC1B37E0BE00231942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3824A1FD1B37E0BE00231942 /* Build configuration list for PBXNativeTarget "CareerCup_QuestionsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				3824A1FF1B37E0BE00231942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
