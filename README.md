@@ -1,3 +1,3 @@
 # CareerCup_Questions
 
-This app is being used to solve careercup problems
+This app is being used to implement algorithms
