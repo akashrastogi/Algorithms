@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3802E3481B62A921003C3028 /* Algorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802E3471B62A921003C3028 /* Algorithms.m */; };
+		3802E34D1B62AA77003C3028 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802E34C1B62AA77003C3028 /* Stack.m */; };
 		38031B1C1B53DEDA0034FEC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 38031B1B1B53DEDA0034FEC0 /* .gitignore */; };
 		3824A1DD1B37E0BE00231942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DC1B37E0BE00231942 /* main.m */; };
 		3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DF1B37E0BE00231942 /* AppDelegate.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3802E3461B62A921003C3028 /* Algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
+		3802E3471B62A921003C3028 /* Algorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithms.m; sourceTree = "<group>"; };
+		3802E34B1B62AA77003C3028 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		3802E34C1B62AA77003C3028 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		38031B1B1B53DEDA0034FEC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3824A1D71B37E0BD00231942 /* CareerCup_Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareerCup_Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3824A1DB1B37E0BE00231942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3802E3491B62AA50003C3028 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				3802E3461B62A921003C3028 /* Algorithms.h */,
+				3802E3471B62A921003C3028 /* Algorithms.m */,
+			);
+			name = Problems;
+			sourceTree = "<group>";
+		};
+		3802E34A1B62AA65003C3028 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				3802E34B1B62AA77003C3028 /* Stack.h */,
+				3802E34C1B62AA77003C3028 /* Stack.m */,
+			);
+			name = DataStructures;
+			sourceTree = "<group>";
+		};
 		3824A1CE1B37E0BD00231942 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +112,8 @@
 				3824A1DF1B37E0BE00231942 /* AppDelegate.m */,
 				3824A1E11B37E0BE00231942 /* ViewController.h */,
 				3824A1E21B37E0BE00231942 /* ViewController.m */,
+				3802E34A1B62AA65003C3028 /* DataStructures */,
+				3802E3491B62AA50003C3028 /* Problems */,
 				3824A1E41B37E0BE00231942 /* Main.storyboard */,
 				3824A1E71B37E0BE00231942 /* Images.xcassets */,
 				3824A1E91B37E0BE00231942 /* LaunchScreen.xib */,
@@ -224,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3824A1E31B37E0BE00231942 /* ViewController.m in Sources */,
+				3802E3481B62A921003C3028 /* Algorithms.m in Sources */,
 				3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */,
+				3802E34D1B62AA77003C3028 /* Stack.m in Sources */,
 				3824A1DD1B37E0BE00231942 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
