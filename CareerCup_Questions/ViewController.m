@@ -31,6 +31,10 @@
     NSArray *arr = @[@"bat", @"tab", @"cat", @"dog", @"god", @"phone", @"pheno", @"dummy", @"muddy"];
     BOOL isAnagramExist = [self checkAnagram:arr];
     NSLog(@"isAnagramExist- %d", isAnagramExist);
+    
+    // Palindrome
+    NSString *word = @"naMaN";
+    NSLog(@"%@ is polindrome = %@", word, [self isPolindrome:word] ? @"True" : @"False");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,6 +82,21 @@
     
     NSString *sortedString = [charArray componentsJoinedByString:@""];
     return sortedString;
+}
+
+#pragma mark - Question - Check if given string is palindrome
+-(BOOL)isPolindrome :(NSString *)word{
+    //  N A M A N
+    //  0 1 2 3 4
+    
+    NSString *string = [word lowercaseString];
+    NSUInteger length = [string length];
+    for (int i=0; i<length/2; i++) {
+        if ([string characterAtIndex:i] != [string characterAtIndex:(length-1 -i)]) {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 @end
