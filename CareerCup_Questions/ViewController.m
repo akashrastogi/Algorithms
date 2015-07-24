@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Algorithms.h"
 #import "Stack.h"
+#import "Queue.h"
 
 @interface ViewController ()
 
@@ -39,7 +40,19 @@
     NSString *word = @"naMaN";
     NSLog(@"%@ is polindrome = %@", word, [algo isPolindrome:word] ? @"True" : @"False");
     
-    // Stack datastructure test
+    // Stack data structure test
+    [self stackTest];
+    
+    // queue data structure test
+    [self queueTest];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)stackTest{
     Stack *stack = [[Stack alloc]init];
     NSLog(@"%@", stack);
     
@@ -59,9 +72,20 @@
     NSLog(@"After clearing- %@", stack);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)queueTest{
+    Queue *queue = [[Queue alloc]init];
+    NSLog(@"%@", queue);
+    
+    [queue enqueue:@"first object"];
+    [queue enqueue:@"second object"];
+    [queue enqueue:@"third object"];
+    NSLog(@"After enqueuing- %@", queue);
+    
+    id dequeued = [queue dequeue];
+    NSLog(@"dequeued element- %@", dequeued);
+    
+    [queue clear];
+    NSLog(@"After clearing- %@", queue);
 }
 
 @end

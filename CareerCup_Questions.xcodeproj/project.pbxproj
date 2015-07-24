@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3802E3481B62A921003C3028 /* Algorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802E3471B62A921003C3028 /* Algorithms.m */; };
 		3802E34D1B62AA77003C3028 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802E34C1B62AA77003C3028 /* Stack.m */; };
+		3802E3501B62B19A003C3028 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802E34F1B62B19A003C3028 /* Queue.m */; };
 		38031B1C1B53DEDA0034FEC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 38031B1B1B53DEDA0034FEC0 /* .gitignore */; };
 		3824A1DD1B37E0BE00231942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DC1B37E0BE00231942 /* main.m */; };
 		3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1DF1B37E0BE00231942 /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 		3802E3471B62A921003C3028 /* Algorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithms.m; sourceTree = "<group>"; };
 		3802E34B1B62AA77003C3028 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		3802E34C1B62AA77003C3028 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		3802E34E1B62B19A003C3028 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		3802E34F1B62B19A003C3028 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 		38031B1B1B53DEDA0034FEC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3824A1D71B37E0BD00231942 /* CareerCup_Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareerCup_Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3824A1DB1B37E0BE00231942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 			children = (
 				3802E34B1B62AA77003C3028 /* Stack.h */,
 				3802E34C1B62AA77003C3028 /* Stack.m */,
+				3802E34E1B62B19A003C3028 /* Queue.h */,
+				3802E34F1B62B19A003C3028 /* Queue.m */,
 			);
 			name = DataStructures;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				3824A1E31B37E0BE00231942 /* ViewController.m in Sources */,
 				3802E3481B62A921003C3028 /* Algorithms.m in Sources */,
 				3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */,
+				3802E3501B62B19A003C3028 /* Queue.m in Sources */,
 				3802E34D1B62AA77003C3028 /* Stack.m in Sources */,
 				3824A1DD1B37E0BE00231942 /* main.m in Sources */,
 			);
