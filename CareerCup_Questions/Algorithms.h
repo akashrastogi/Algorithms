@@ -12,4 +12,5 @@
 - (NSArray*)arrayOfWordsIn:(NSDictionary*)words thatMatchDotFormat:(NSString*)format;
 -(BOOL)checkAnagram:(NSArray *)arr;
 -(BOOL)isPolindrome :(NSString *)word;
+- (NSString *)reverseString:(NSString *)stringToReverse;
 @end

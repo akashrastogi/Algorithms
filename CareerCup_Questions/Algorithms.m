@@ -65,4 +65,16 @@
     }
     return YES;
 }
+
+#pragma mark - Question - Get reverse string
+- (NSString *)reverseString:(NSString *)stringToReverse
+{
+    NSMutableString *reversedString = [NSMutableString stringWithCapacity:[stringToReverse length]];
+    [stringToReverse enumerateSubstringsInRange:NSMakeRange(0, [stringToReverse length])
+                                        options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences)
+                                     usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                                         [reversedString appendString:substring];
+                                     }];
+    return reversedString;
+}
 @end

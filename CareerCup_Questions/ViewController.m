@@ -45,6 +45,10 @@
     
     // queue data structure test
     [self queueTest];
+    
+    // Reverse string test
+    NSString *stringToReverse = @"ABCDefgHIjK";
+    NSLog(@"Reverse of %@ is %@", stringToReverse, [algo reverseString:stringToReverse]);
 }
 
 - (void)didReceiveMemoryWarning {
