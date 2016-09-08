@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Basic_Input_Output/BasicIO.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
+int main(int argc, char * argv[])
+{
+    @autoreleasepool
+    {
+        NSString *input = @"abcDEFghIjKlMnOP";
+        NSString *toggleString = [BasicIO toggleStringCase:input];
+        NSLog(@"Toggle case string of %@ is %@", input, toggleString);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
