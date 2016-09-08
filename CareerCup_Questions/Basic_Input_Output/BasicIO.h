@@ -11,5 +11,6 @@
 @interface BasicIO : NSObject
 
 + (NSString *)toggleStringCase:(NSString *)inputString;
++ (NSInteger)numberOfNumbersDividedBy:(NSInteger)x Between:(NSInteger)a and:(NSInteger)b;
 
 @end

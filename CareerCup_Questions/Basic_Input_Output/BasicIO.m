@@ -33,4 +33,17 @@
     return outputString;
 }
 
++ (NSInteger)numberOfNumbersDividedBy:(NSInteger)x Between:(NSInteger)a and:(NSInteger)b
+{
+    NSInteger first = a/x;
+    NSInteger last = b/x;
+    NSInteger count;
+    if (first<last)
+        count = last - first;
+    else
+        count = first - last;
+    
+    return (count>0)?count:0;
+}
+
 @end

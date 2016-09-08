@@ -14,9 +14,13 @@ int main(int argc, char * argv[])
 {
     @autoreleasepool
     {
-        NSString *input = @"abcDEFghIjKlMnOP";
+        NSString *input = @"abcDs EFgh dIjK   flMnOP";
         NSString *toggleString = [BasicIO toggleStringCase:input];
         NSLog(@"Toggle case string of %@ is %@", input, toggleString);
+        
+        NSInteger dividedBy = 11, first = 100, last = 7;
+        NSInteger count = [BasicIO numberOfNumbersDividedBy:dividedBy Between:first and:last];
+        NSLog(@"numberOfNumbersDividedBy %ld Between %ld and %ld IS %ld", dividedBy, first, last, count);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
