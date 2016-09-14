@@ -17,16 +17,19 @@
         return arrInput;
     
     NSMutableArray *arrOutput = [NSMutableArray arrayWithArray:arrInput];
-    for (int i=0; i<arrOutput.count-1; i++)
-    {
+    BOOL isSwapped = YES;
+    while (isSwapped) {
+        isSwapped = NO;
         for (int j=0; j<arrOutput.count-1; j++)
         {
             if ([arrOutput objectAtIndex:j] > [arrOutput objectAtIndex:j+1])
             {
                 [arrOutput exchangeObjectAtIndex:j withObjectAtIndex:j+1];
+                isSwapped = YES;
             }
         }
     }
+    
     return arrOutput;
 }
 
