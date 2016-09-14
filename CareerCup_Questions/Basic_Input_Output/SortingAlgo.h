@@ -12,5 +12,6 @@
 
 + (NSArray *)bubbleSortArray:(NSArray *)arrInput;
 + (NSArray *)selectionSortArray:(NSArray *)arrInput;
++ (NSArray *)insertionSortArray:(NSArray *)arrInput;
 
 @end

@@ -57,4 +57,22 @@
     return arrOutput;
 }
 
++ (NSArray *)insertionSortArray:(NSArray *)arrInput
+{
+    if (arrInput.count == 0)// If array is empty return as it is to avoid crash
+        return arrInput;
+    
+    NSMutableArray *arrOutput = [NSMutableArray arrayWithArray:arrInput];
+    for (int i=1; i<arrOutput.count; i++)
+    {
+        int j = i;
+        while (j>0 && [arrOutput objectAtIndex:j-1]>[arrOutput objectAtIndex:j])
+        {
+            [arrOutput exchangeObjectAtIndex:j withObjectAtIndex:j-1];
+            j--;
+        }
+    }
+    return arrOutput;
+}
+
 @end

@@ -30,6 +30,9 @@ int main(int argc, char * argv[])
         arrSorted = [SortingAlgo selectionSortArray:arrUnsorted];
         NSLog(@"Sorted array using Selection sort is- %@", arrSorted);
         
+        arrSorted = [SortingAlgo insertionSortArray:arrUnsorted];
+        NSLog(@"Sorted array using Insertion sort is- %@", arrSorted);
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
