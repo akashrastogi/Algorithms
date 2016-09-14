@@ -33,4 +33,28 @@
     return arrOutput;
 }
 
++ (NSArray *)selectionSortArray:(NSArray *)arrInput
+{
+    if (arrInput.count == 0)// If array is empty return as it is to avoid crash
+        return arrInput;
+    
+    NSMutableArray *arrOutput = [NSMutableArray arrayWithArray:arrInput];
+    for (int i=0; i<arrOutput.count; i++)
+    {
+        int smallestPointer = i;
+        for (int j=i+1; j<arrOutput.count; j++)
+        {
+            if ([arrOutput objectAtIndex:j] < [arrOutput objectAtIndex:smallestPointer])
+            {
+                smallestPointer = j;
+            }
+        }
+        if (smallestPointer != i)
+        {
+            [arrOutput exchangeObjectAtIndex:i withObjectAtIndex:smallestPointer];
+        }
+    }
+    return arrOutput;
+}
+
 @end

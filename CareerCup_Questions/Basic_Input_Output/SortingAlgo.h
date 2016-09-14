@@ -11,5 +11,6 @@
 @interface SortingAlgo : NSObject
 
 + (NSArray *)bubbleSortArray:(NSArray *)arrInput;
++ (NSArray *)selectionSortArray:(NSArray *)arrInput;
 
 @end

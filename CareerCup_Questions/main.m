@@ -26,6 +26,10 @@ int main(int argc, char * argv[])
         NSArray *arrUnsorted  = @[@13, @31, @32, @33, @1, @98, @89, @100, @70, @31];
         NSArray *arrSorted = [SortingAlgo bubbleSortArray:arrUnsorted];
         NSLog(@"Sorted array using Bubble sort is- %@", arrSorted);
+        
+        arrSorted = [SortingAlgo selectionSortArray:arrUnsorted];
+        NSLog(@"Sorted array using Selection sort is- %@", arrSorted);
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
