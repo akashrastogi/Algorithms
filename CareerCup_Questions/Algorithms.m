@@ -69,12 +69,28 @@
 #pragma mark - Question - Get reverse string
 - (NSString *)reverseString:(NSString *)stringToReverse
 {
-    NSMutableString *reversedString = [NSMutableString stringWithCapacity:[stringToReverse length]];
-    [stringToReverse enumerateSubstringsInRange:NSMakeRange(0, [stringToReverse length])
-                                        options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences)
-                                     usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
-                                         [reversedString appendString:substring];
-                                     }];
-    return reversedString;
+    
+    NSMutableString *str = [NSMutableString stringWithString:stringToReverse];
+    NSUInteger length = str.length;
+    for (int i=0; i<length/2; i++)
+    {
+        NSRange rangeLeft = NSMakeRange(i, 1);
+        NSString *strLeft = [str substringWithRange:NSMakeRange(i, 1)];
+        NSRange rangeRight = NSMakeRange(length-1 - i, 1);
+        NSString *strRight = [str substringWithRange:NSMakeRange(length-1 - i, 1)];
+        [str replaceCharactersInRange:rangeLeft withString:strRight];
+        [str replaceCharactersInRange:rangeRight withString:strLeft];
+    }
+    return str;
+    
+    /*
+     NSMutableString *reversedString = [NSMutableString stringWithCapacity:[stringToReverse length]];
+     [stringToReverse enumerateSubstringsInRange:NSMakeRange(0, [stringToReverse length])
+     options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences)
+     usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+     [reversedString appendString:substring];
+     }];
+     return reversedString;
+     */
 }
 @end
