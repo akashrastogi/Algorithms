@@ -20,6 +20,7 @@
 		3824A1F71B37E0BE00231942 /* CareerCup_QuestionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3824A1F61B37E0BE00231942 /* CareerCup_QuestionsTests.m */; };
 		D24DCEA61D81C08800FD355A /* BasicIO.m in Sources */ = {isa = PBXBuildFile; fileRef = D24DCEA51D81C08800FD355A /* BasicIO.m */; };
 		D2AABE921D887A1B0075E852 /* SortingAlgo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AABE911D887A1B0075E852 /* SortingAlgo.m */; };
+		D2BC8F6B1DE49AA900845884 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BC8F6A1DE49AA900845884 /* BinarySearchTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		D24DCEA51D81C08800FD355A /* BasicIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicIO.m; sourceTree = "<group>"; };
 		D2AABE901D887A1B0075E852 /* SortingAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingAlgo.h; sourceTree = "<group>"; };
 		D2AABE911D887A1B0075E852 /* SortingAlgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortingAlgo.m; sourceTree = "<group>"; };
+		D2BC8F691DE49AA900845884 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		D2BC8F6A1DE49AA900845884 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				3802E34C1B62AA77003C3028 /* Stack.m */,
 				3802E34E1B62B19A003C3028 /* Queue.h */,
 				3802E34F1B62B19A003C3028 /* Queue.m */,
+				D2BC8F691DE49AA900845884 /* BinarySearchTree.h */,
+				D2BC8F6A1DE49AA900845884 /* BinarySearchTree.m */,
 			);
 			name = DataStructures;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				D2AABE921D887A1B0075E852 /* SortingAlgo.m in Sources */,
 				3802E3481B62A921003C3028 /* Algorithms.m in Sources */,
 				3824A1E01B37E0BE00231942 /* AppDelegate.m in Sources */,
+				D2BC8F6B1DE49AA900845884 /* BinarySearchTree.m in Sources */,
 				3802E3501B62B19A003C3028 /* Queue.m in Sources */,
 				D24DCEA61D81C08800FD355A /* BasicIO.m in Sources */,
 				3802E34D1B62AA77003C3028 /* Stack.m in Sources */,

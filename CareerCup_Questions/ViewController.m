@@ -10,6 +10,7 @@
 #import "Algorithms.h"
 #import "Stack.h"
 #import "Queue.h"
+#import "BinarySearchTree.h"
 
 @interface ViewController ()
 
@@ -49,6 +50,9 @@
     // Reverse string test
     NSString *stringToReverse = @"ABCDefgHIjK";
     NSLog(@"Reverse of %@ is %@", stringToReverse, [algo reverseString:stringToReverse]);
+    
+    // Binary Seacrh Tree Test
+    [self binarySearchTreeTest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,6 +94,23 @@
     
     [queue clear];
     NSLog(@"After clearing- %@", queue);
+}
+
+- (void)binarySearchTreeTest
+{
+    BinarySearchTree *bst = [[BinarySearchTree alloc]initWithValue:7];
+    [bst insert:2];
+    [bst insert:5];
+    [bst insert:10];
+    [bst insert:9];
+    [bst insert:1];
+    NSLog(@"Sorted Binary Search Tree- %@", bst);
+    
+    int searchValue = 10;
+    NSLog(@"Node for %d is - %@", searchValue, [bst searchValue:searchValue]);
+    
+    searchValue = 20;
+    NSLog(@"Node for %d is - %@", searchValue, [bst searchValue:searchValue]);
 }
 
 @end
