@@ -129,4 +129,44 @@
     else return self;
 }
 
+- (BinarySearchTree *)deleteValue:(int)value
+{
+    BinarySearchTree *node = [self searchValue:value];
+    if (node)
+    {
+        if (node.isLeaf)// node doesn't have any child
+        {
+            if ([node.parent.left isEqual:node])
+                node.parent.left = nil;
+            else if ([node.parent.right isEqual:node])
+                node.parent.right = nil;
+        }
+        else if (!node.hasBothChild)// node have one child either left or right
+        {
+            BinarySearchTree *child = node.left ? node.left : node.right;
+            if([node.parent.left isEqual:node])
+                node.parent.left = child;
+            else if([node.parent.right isEqual:node])
+                node.parent.right = child;
+        }
+        else if (node.hasBothChild)// node have both child
+        {
+            // Find maximum in the Left sub tree
+            BinarySearchTree *maximum = node.left;
+            while (maximum.right)
+            {
+                maximum = maximum.right;
+            }
+            node.value = maximum.value;// copy the minimum value to the node to be deleted
+            // Disconect the "maximum" node
+            if ([maximum.parent.left isEqual:maximum])
+                maximum.parent.left = nil;
+            else if ([maximum.parent.right isEqual:maximum])
+                maximum.parent.right = nil;
+        }
+    }
+    
+    return self;
+}
+
 @end

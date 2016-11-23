@@ -99,18 +99,26 @@
 - (void)binarySearchTreeTest
 {
     BinarySearchTree *bst = [[BinarySearchTree alloc]initWithValue:7];
-    [bst insert:2];
     [bst insert:5];
-    [bst insert:10];
+    [bst insert:2];
+    [bst insert:4];
+    [bst insert:3];
+    [bst insert:12];
     [bst insert:9];
-    [bst insert:1];
+    [bst insert:21];
+    [bst insert:19];
+    [bst insert:25];
     NSLog(@"Sorted Binary Search Tree- %@", bst);
     
-    int searchValue = 10;
+    int searchValue = 3;
     NSLog(@"Node for %d is - %@", searchValue, [bst searchValue:searchValue]);
     
-    searchValue = 20;
+    searchValue = 11;
     NSLog(@"Node for %d is - %@", searchValue, [bst searchValue:searchValue]);
+    
+    int deletevalue = 12;//4,
+    BinarySearchTree *newTree = [bst deleteValue:deletevalue];
+    NSLog(@"Tree after deletion of %d = %@", deletevalue, newTree);
 }
 
 @end

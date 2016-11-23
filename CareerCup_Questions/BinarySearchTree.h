@@ -27,5 +27,6 @@
 
 - (void)insert:(int)value;
 - (BinarySearchTree *)searchValue:(int)value;
+- (BinarySearchTree *)deleteValue:(int)value;
 
 @end
