@@ -33,6 +33,18 @@ int main(int argc, char * argv[])
         arrSorted = [SortingAlgo insertionSortArray:arrUnsorted];
         NSLog(@"Sorted array using Insertion sort is- %@", arrSorted);
         
+        NSString *inputString = @"aaabccddd";
+        NSString *reducedString = [BasicIO superReducedString:inputString];
+        NSLog(@"Super reduced string of %@ is %@", inputString, reducedString);
+        
+        NSString *camelString = @"saveChangesInTheEditor";
+        NSInteger wordsCount = [BasicIO wordsCountInCamelString:camelString];
+        NSLog(@"Total words in %@ is %ld", camelString, (long)wordsCount);
+        
+        NSString *pangramString = @"We promptly judged antique ivory buckles for the next prize";
+        BOOL isPanagram = [BasicIO isWordPanagram:pangramString];
+        NSLog(@"'%@' is Panagram ? %@", pangramString, isPanagram?@"YES":@"NO");
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

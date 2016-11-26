@@ -12,5 +12,8 @@
 
 + (NSString *)toggleStringCase:(NSString *)inputString;
 + (NSInteger)numberOfNumbersDividedBy:(NSInteger)x Between:(NSInteger)a and:(NSInteger)b;
++ (NSString *)superReducedString:(NSString *)input;
++ (NSInteger)wordsCountInCamelString:(NSString *)input;
++ (BOOL)isWordPanagram:(NSString *)input;
 
 @end
